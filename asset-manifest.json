@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bibimbeat_frontend/static/css/main.116af233.chunk.css",
-    "main.js": "/bibimbeat_frontend/static/js/main.df31e164.chunk.js",
-    "main.js.map": "/bibimbeat_frontend/static/js/main.df31e164.chunk.js.map",
+    "main.js": "/bibimbeat_frontend/static/js/main.0a9df0c2.chunk.js",
+    "main.js.map": "/bibimbeat_frontend/static/js/main.0a9df0c2.chunk.js.map",
     "runtime-main.js": "/bibimbeat_frontend/static/js/runtime-main.d9edd85c.js",
     "runtime-main.js.map": "/bibimbeat_frontend/static/js/runtime-main.d9edd85c.js.map",
     "static/js/2.073d541c.chunk.js": "/bibimbeat_frontend/static/js/2.073d541c.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.d9edd85c.js",
     "static/js/2.073d541c.chunk.js",
     "static/css/main.116af233.chunk.css",
-    "static/js/main.df31e164.chunk.js"
+    "static/js/main.0a9df0c2.chunk.js"
   ]
 }
