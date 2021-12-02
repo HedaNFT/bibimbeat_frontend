@@ -12,7 +12,6 @@ function MenuBar() {
             <div className={stylesMenuBar.logoMenuBar}><BibimbeatLogo /></div>
             <div className={stylesMenuBar.mainMenuMenuBar}><MainMenu /></div>
             <div className={stylesMenuBar.myMusicMenuBar}>
-            
             </div>
             <div className={stylesMenuBar.connectWalletMenuBar}>
             <MyMusic />

@@ -6,6 +6,7 @@ import MyMusicList from './components/myMusicList/myMusicList';
 import MintNFT from './components/mintNFT/mintNFT';
 import Market from './components/market/market';
 import { Route, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import WalletNotConnected from './components/walletNotConnected/walletNotConnected';
 // import Video from './components/video/video';
 // import { useState } from 'react';
@@ -20,10 +21,12 @@ function App() {
         </div>
         {/* <Video /> */}
         <div className="banner">
-          <Route exact path="/" component={Banner} />
-          <Route exact path="/myMusicList" component={MyMusicList} />
-          <Route exact path="/mintNFT" component={MintNFT} />
-          <Route exact path="/market" component={Market} />
+          <BrowserRouter basename="/bibimbeat_frontend">
+            <Route exact path="/" component={Banner} />
+            <Route exact path="/myMusicList" component={MyMusicList} />
+            <Route exact path="/mintNFT" component={MintNFT} />
+            <Route exact path="/market" component={Market} />
+          </BrowserRouter>
         </div>
         <div className="player">
           <Player />

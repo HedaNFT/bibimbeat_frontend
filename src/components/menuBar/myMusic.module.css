@@ -17,6 +17,20 @@
 .myMusic:hover{
     background: #952dfd;
 }
+#myMusic{
+    border-radius: 25px;
+    box-shadow: 0px 3px 6px #07030329;
+    background: #D504D9;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 115px;
+    height: 30px;
+    position: relative;
+    top: 68px;
+    left: 10px;
+    cursor: pointer;
+    transition: background 1s ease-in-out;
+}
 
 #img{
     position: relative;

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function MyMusic() {
     return (
         <div>
-            <Link to="myMusicList" style={{ textDecoration: 'none' }}>
+            <Link to="myMusicList">
                 <div className={stylesMyMusic.myMusic}>
                     <div style={{ textDecoration: 'none', backgroundColor: 'red', height: '0px' }}>
                         <span id={stylesMyMusic.my}>My</span>

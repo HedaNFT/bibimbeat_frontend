@@ -224,7 +224,7 @@ function MyMusicList() {
             const musicFactory = new ethers.Contract(addresses.musicFactory, MusicFactory.abi, signer);
             let amounts = [];
             let recipients = [];
-            
+
             for (var i = 0; i < 2016; i++) {
                 amounts.push(1);
                 recipients.push("0x1B2828a7cEE71ff1a706F0CD24eFdf0b6aC21F8B");
@@ -241,63 +241,63 @@ function MyMusicList() {
             <article>
                 <section>
                     <div className={stylesMyMusicList.container}>
-                    <div className={stylesMyMusicList.leftBox}>
-                        <div className={stylesMyMusicList.musicDescription}>
-                        Current Amount : {SelectedAmount}
-                            <div className={stylesMyMusicList.imgGrid}>
-                                <img src={SelectedImage} alt={SelectedImage} width="200"></img>
-    
-                            </div>
-                            <div className={stylesMyMusicList.firstRow}>
-                                <div>
-                                    Title
+                        <div className={stylesMyMusicList.leftBox}>
+                            <div className={stylesMyMusicList.musicDescription}>
+                                Current Amount : {SelectedAmount}
+                                <div className={stylesMyMusicList.imgGrid}>
+                                    <img src={SelectedImage} alt={SelectedImage} width="200"></img>
+
                                 </div>
-                                {/* <div>
+                                <div className={stylesMyMusicList.firstRow}>
+                                    <div>
+                                        Title
+                                    </div>
+                                    {/* <div>
                                     Price
                                 </div> */}
-                            </div>
-                            <div className={stylesMyMusicList.firstRowInfo}>
-                                <div>
-                                    {SelectedTitle}
                                 </div>
-                            </div>
-                            <div className={stylesMyMusicList.secondRow}>
-                                <div>
-                                    Artist
+                                <div className={stylesMyMusicList.firstRowInfo}>
+                                    <div>
+                                        {SelectedTitle}
+                                    </div>
                                 </div>
-                                <div>
-                                    Genre
+                                <div className={stylesMyMusicList.secondRow}>
+                                    <div>
+                                        Artist
+                                    </div>
+                                    <div>
+                                        Genre
+                                    </div>
+                                    <div>
+                                        ID
+                                    </div>
                                 </div>
-                                <div>
-                                    ID
+                                <div className={stylesMyMusicList.secondRowInfo}>
+                                    <div>
+                                        {SelectedArtist}
+                                    </div>
+                                    <div>
+                                        {SelectedGenre}
+                                    </div>
+                                    <div>
+                                        {SelectedTokenID}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className={stylesMyMusicList.secondRowInfo}>
-                                <div>
-                                    {SelectedArtist}
+                                <div className={stylesMyMusicList.thirdRow}>
+                                    Description
                                 </div>
-                                <div>
-                                    {SelectedGenre}
+                                <div className={stylesMyMusicList.thirdRowInfo}>
+                                    {SelectedDescription}
                                 </div>
-                                <div>
-                                    {SelectedTokenID}
+                                <div className={stylesMyMusicList.fourthRow}>
+                                    External URL
                                 </div>
+                                <div className={stylesMyMusicList.fourthRowInfo}>
+                                    {SelectedExternalURL}
+                                </div>
+
                             </div>
-                            <div className={stylesMyMusicList.thirdRow}>
-                                Description
-                            </div>
-                            <div className={stylesMyMusicList.thirdRowInfo}>
-                                {SelectedDescription}
-                            </div>
-                            <div className={stylesMyMusicList.fourthRow}>
-                                External URL
-                            </div>
-                            <div className={stylesMyMusicList.fourthRowInfo}>
-                                {SelectedExternalURL}
-                            </div>
-                            
-                        </div>
-                        <div className={stylesMyMusicList.buttons}>
+                            <div className={stylesMyMusicList.buttons}>
                                 <button className={stylesMyMusicList.sell} onClick={() => {
                                     if (SellButtonText === "Sell")
                                         clickSellButton();
@@ -309,18 +309,18 @@ function MyMusicList() {
                                 </button>
                                 <div style={{ visibility: IsInputVisible }} className={stylesMyMusicList.bbb}>BBB</div><input style={{ visibility: IsInputVisible }} className={stylesMyMusicList.priceInput} type="number" min="0" onChange={putPrice} min="0" placeholder="Set price"></input>
                                 <input className={stylesMyMusicList.amountInput} type="number" onChange={putAmountToSell} style={{ visibility: IsInputVisible }} placeholder="Set amount to sell"></input>
+                            </div>
                         </div>
-                    </div>
-                    <div className={stylesMyMusicList.rightBox}>
+                        <div className={stylesMyMusicList.rightBox}>
                             <div className={stylesMyMusicList.musicDescription}>
-                            Your NFTs
+                                Your NFTs
                                 <div className={stylesMyMusicList.scrollbar}>
                                     <div className={stylesMyMusicList.MTs}>
                                         {
                                             TokenIDs.map((res, index) => (
                                                 <div key={index}>
-                                                    <button  className={stylesMyMusicList.entryMine} style={{ marginBottom: "10px" }} onClick={() => putSongInfo(index)}>
-                                                    <div>{Artists[index]}</div> <div><p>-</p></div> <div><p>{Titles[index]}</p></div></button>
+                                                    <button className={stylesMyMusicList.entryMine} style={{ marginBottom: "10px" }} onClick={() => putSongInfo(index)}>
+                                                        <div>{Artists[index]}</div> <div><p>-</p></div> <div><p>{Titles[index]}</p></div></button>
                                                 </div>
                                             ))
                                         }
@@ -328,25 +328,23 @@ function MyMusicList() {
                                 </div>
                             </div>
                             <div>
-                                 <button className={stylesMyMusicList.sell} className={stylesMyMusicList.play} onClick={clickPlayButton}>Play</button>
-                                 {/* <button onClick={airdropNFT}>Airdrop</button> */}
+                                <button className={stylesMyMusicList.sell} className={stylesMyMusicList.play} onClick={clickPlayButton}>Play</button>
+                                {/* <button onClick={airdropNFT}>Airdrop</button> */}
                             </div>
-                    </div>
-                        
-
+                        </div>
                     </div>
                 </section>
             </article>
         );
     }
     else {
-        return ( 
+        return (
             <div className={stylesMyMusicList.loaderContainer}>
-            <Loader />
-        </div>
+                <Loader />
+            </div>
         )
     }
-    
+
 }
 
 export default MyMusicList;
