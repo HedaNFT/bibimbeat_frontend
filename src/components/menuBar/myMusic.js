@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 function MyMusic() {
     return (
         <div>
-            <Link to="myMusicList">
-                <div className={stylesMyMusic.myMusic}>
-                    <div style={{ textDecoration: 'none', backgroundColor: 'red', height: '0px' }}>
+            <Link style={{ textDecoration: 'none', color: 'white', height:'0px' }} to="myMusicList">
+                <div id={stylesMyMusic.myMusic}> { /*maybe the problem */}
+                    <div>
                         <span id={stylesMyMusic.my}>My</span>
                         <img id={stylesMyMusic.img} src={music} alt={music}></img>
                     </div>

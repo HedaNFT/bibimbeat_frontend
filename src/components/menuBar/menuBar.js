@@ -10,13 +10,15 @@ function MenuBar() {
     <nav>
         <div className={stylesMenuBar.flexContainer}>
             <div className={stylesMenuBar.logoMenuBar}><BibimbeatLogo /></div>
-            <div className={stylesMenuBar.mainMenuMenuBar}><MainMenu /></div>
-            <div className={stylesMenuBar.myMusicMenuBar}>
+            <div>
+                <MainMenu />
             </div>
-            <div className={stylesMenuBar.connectWalletMenuBar}>
-            <MyMusic />
-            <ConnectWallet />
-            <DotMenu />
+            <div>
+            </div>
+            <div className={stylesMenuBar.rightMenuBar}>
+                <MyMusic />
+                <ConnectWallet />
+                <DotMenu />
             </div>
    
         </div>
